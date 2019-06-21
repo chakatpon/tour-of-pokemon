@@ -58,8 +58,8 @@ export const POKEMONS: Pokemon[] = [
     },
     {
         id: 12,
-        name: "Pikachu",
-        imgURL: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+        name: "Scyther",
+        imgURL: "https://cdn.bulbagarden.net/upload/thumb/b/ba/123Scyther.png/250px-123Scyther.png"
     },
 
 
