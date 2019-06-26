@@ -1,8 +1,7 @@
 
-<app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
-<a *ngFor="let pokemon of pokemons" (click)="onSelectPokemon(pokemon)" class="list-group my-1" href="#">
+<div *ngFor="let pokemon of pokemons" (click)="onSelectPokemon(pokemon)" class="list-group my-1" >
   
-  <div class="list-group-item">
+  <a routerLink="/detail/{{pokemon.id}}" class="list-group-item">
     <h4>{{pokemon.name | uppercase }}</h4>
     <div><span class="badge badge-secondary">id:</span> {{pokemon.id}}</div>
     <div>
@@ -10,6 +9,6 @@
         <input [(ngModel)]="pokemon.name" placeholder="name"/>
       </label>
     </div>
-  </div>
+  </a>
 
-</a>
+</div>

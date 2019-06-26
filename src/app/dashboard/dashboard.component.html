@@ -1,0 +1,16 @@
+<h3>Top Pokemon</h3>
+
+  <div  *ngFor="let pokemon of pokemons" (click)="onSelectPokemon(pokemon)" class="list-group" >
+  
+    <a routerLink="/detail/{{pokemon.id}}" class="list-group-item">
+      <h4>{{pokemon.name | uppercase }}</h4>
+      <div><span class="badge badge-secondary">id:</span> {{pokemon.id}}</div>
+      <div>
+        <label>name:
+          <input [(ngModel)]="pokemon.name" placeholder="name"/>
+        </label>
+      </div>
+    </a>
+  
+  
+</div>
